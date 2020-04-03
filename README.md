@@ -1,19 +1,19 @@
 # RasterDataType
 
-Provides easy acces to raster or array data types of various lib
+Provides easy acces to raster or array data types of various librairies
 
 
-Allows you to esaly manipulate the array or images data types the following libraries:
+Allows you to easily manipulate the array or images data types of the following libraries:
 
 - [Gdal](http://gdal.org)
 - [OTB](https://www.orfeo-toolbox.org/)
 - [Numpy](http://www.numpy.org)
 
-Note that there is no need for OTB to be installed so that the RasterDataType works, only OTB datatype won't be available.
+Note that there is no need for OTB to be installed so that the RasterDataType works, only OTB data types won't be available.
 
 The purpose of this package is that developer no longer have to care about how to specify a data type in each library.
 
-You can either initialize a RasterDataType instance by specifying the data type with low string or upper string mode :
+You can either initialize a RasterDataType instance by specifying the data type with low string or upper string :
 
 ```python
 >>> from RasterDataType import RasterDataType
@@ -21,7 +21,7 @@ You can either initialize a RasterDataType instance by specifying the data type 
 >>> second_dtype = RasterDataType(ustr_dtype='Float32')
 ```
 
-And then get the data type of the library of your choice
+And then get the data type of the library of your choice :
 
 ```python
 
@@ -33,7 +33,7 @@ And then get the data type of the library of your choice
 <class 'numpy.float32'>
 ```
 
-You can also initialize a RasterDataType instance from library type and then get the data type of the library of your choice :
+You can also initialize a RasterDataType instance from a library type and then get the data type of another library of your choice :
 
 ```python
 >>> import numpy as np
