@@ -37,7 +37,8 @@ You can also initialize a RasterDataType instance from a library type and then g
 
 ```python
 >>> import numpy as np
->>> dtype = RasterDataType(numpy_dtype=np.float64)
+>>> my_array = np.array([55.55, 66.66])
+>>> dtype = RasterDataType(numpy_dtype=my_array.dtype.type)
 >>> print(dtype.lstr_dtype)
 float64
 ```
